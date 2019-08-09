@@ -1,0 +1,17 @@
+server:
+  port: 8091
+  servlet:
+    contextPath: /springboot
+
+book:
+  author: su
+  name: A woman's epic
+
+spring:
+  http:
+    encoding:
+      force: true
+      charset:
+
+hello:
+  msg: Scarlett

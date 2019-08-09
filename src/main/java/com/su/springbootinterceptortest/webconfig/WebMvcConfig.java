@@ -1,4 +1,4 @@
-package com.su.springbootinterceptortest.config;
+package com.su.springbootinterceptortest.webconfig;
 
 
 import com.su.springbootinterceptortest.interceptor.AdminInterceptor;

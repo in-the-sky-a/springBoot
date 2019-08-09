@@ -1,2 +1,16 @@
+1、启动项目方式
+   -运行main方法
+   -mvn spring-boot:run
+
+2、interceptor
 ref:https://o7planning.org/en/11689/spring-boot-interceptors-tutorial
 访问：http://localhost:8080
+
+3、controllerAdvice处理exception
+http://localhost:8080/admin/exceptionTest
+
+4、SpringJUnit4ClassRunner
+MainControllerTest
+
+5、 自定义autoconfig
+spring-boot-autoconfig项目

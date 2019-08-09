@@ -1,0 +1,11 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /springboot
+
+book:
+  author: su
+  name: A woman's epic
+
+hello:
+  msg: Scarlett
