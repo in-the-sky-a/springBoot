@@ -25,6 +25,7 @@ public class LogInterceptor extends HandlerInterceptorAdapter {
         System.out.println("\n-------- LogInterception.postHandle --- ");
         System.out.println("Request URL: " + request.getRequestURL());
     }
+
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response,
                                 Object handler, Exception ex) throws Exception {

@@ -62,12 +62,14 @@ public class MainController {
     }
 
     @RequestMapping(value = "admin/book")
-    public @ResponseBody String book() {
-        return "author: " + bookConfig.getAuthor() +  ", name: "+bookConfig.getName();
+    public @ResponseBody
+    String book() {
+        return "author: " + bookConfig.getAuthor() + ", name: " + bookConfig.getName();
     }
 
     @RequestMapping(value = "autoconfig")
-    public @ResponseBody String autoConfig() {
+    public @ResponseBody
+    String autoConfig() {
         return helloService.sayHello();
     }
 

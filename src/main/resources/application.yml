@@ -1,4 +1,9 @@
 spring:
   profiles:
     active: prod
+  datasource:
+    url: jdbc:mysql://localhost:3306/mysql?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true
+    name: mysql
+    username: root
+    password: test1234
 debug: true
