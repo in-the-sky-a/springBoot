@@ -7,11 +7,6 @@ book:
   author: su
   name: A woman's epic
 
-spring:
-  http:
-    encoding:
-      force: true
-      charset:
 
 hello:
   msg: Scarlett

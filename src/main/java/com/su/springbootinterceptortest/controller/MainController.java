@@ -2,7 +2,9 @@ package com.su.springbootinterceptortest.controller;
 
 import com.su.autoconfig.HelloService;
 import com.su.springbootinterceptortest.conf.BookConfig;
+import com.su.springbootinterceptortest.utils.interfaces.Interface1;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +20,10 @@ public class MainController {
     private BookConfig bookConfig;
     @Autowired
     private HelloService helloService;
+
+    @Autowired
+    @Qualifier(value = "impl1")
+    private Interface1 interface1;
 
     @RequestMapping(value = {"/", "/test"})
     public String test(Model model) {
@@ -71,6 +77,14 @@ public class MainController {
     public @ResponseBody
     String autoConfig() {
         return helloService.sayHello();
+    }
+
+
+    @RequestMapping(value = "interface")
+    @ResponseBody
+    public void interfaceTest() {
+        interface1.impl();
+
     }
 
 
