@@ -5,6 +5,8 @@ import org.omg.CORBA.IntHolder;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TestUtil {
 
@@ -111,5 +113,7 @@ public class TestUtil {
 
         Enum.valueOf(SizeEnum.class, "SMALL");
     }
+
+
 
 }

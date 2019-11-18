@@ -98,13 +98,15 @@ public class Sort {
     private void insertSort(int[] v) {
         int n = v.length;
         for(int i = 0; i < n - 1; i++) {
-            for(int j = i + 1; j > 0; j--) {
-                if(v[j] < v[j-1]) {
-                    int temp = v[j];
-                    v[j] = v[j-1];
-                    v[j-1] = temp;
-                }
+            int value = v[i];
+            int j = i - 1;
+            for(; j > 0; j--) {
+                if(v[j] < value) {
+                    v[j+1] = v[j];
+                } else
+                    break;
             }
+            v[j+1] = value;
         }
 
         print(v);
@@ -193,18 +195,13 @@ public class Sort {
         int j = start;
         for(; j < end; j++) {
             if(v[j] < p) {
-                int temp = v[i];
-                v[i]=v[j];
-                v[j] = temp;
+                swap(v[i], v[j]);
                 i++;
 
             }
         }
 
-        int temp = v[i];
-        v[i]=v[end];
-        v[end] = temp;
-
+        swap(v[i], v[end]);
         return i;
     }
 
